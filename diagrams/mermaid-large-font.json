@@ -1,0 +1,18 @@
+{
+  "theme": "default",
+  "themeVariables": {
+    "fontFamily": "Arial, Helvetica, sans-serif",
+    "fontSize": "24px"
+  },
+  "flowchart": {
+    "useMaxWidth": false,
+    "htmlLabels": true
+  },
+  "sequence": {
+    "useMaxWidth": false,
+    "showSequenceNumbers": true
+  },
+  "class": {
+    "useMaxWidth": false
+  }
+}

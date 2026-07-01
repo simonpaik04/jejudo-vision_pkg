@@ -1,0 +1,22 @@
+svg {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+text,
+tspan,
+.nodeLabel,
+.edgeLabel,
+.messageText,
+.loopText,
+.actor,
+.label,
+.classTitle,
+.classText {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 24px !important;
+}
+
+.edgeLabel,
+.labelBkg {
+  font-size: 22px !important;
+}
