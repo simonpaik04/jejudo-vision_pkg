@@ -1,0 +1,11 @@
+<launch>
+  <arg name="mode" default="sim" doc="driving mode: sim or real"/>
+
+  <!-- Publish global parameter so nodes know what topics and constants to use -->
+  <param name="driving_mode" value="$(arg mode)" />
+
+  <!-- Vision Node -->
+  <node pkg="vision_pkg" type="main.py" name="vision_node" output="screen">
+  </node>
+  
+</launch>
