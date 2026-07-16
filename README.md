@@ -399,29 +399,32 @@ Path Publishing
 
 ## 9. Repository Structure
 
-```text
-jejudo-vision_pkg/
-├── README.md
-├── launch/
-│   └── vision.launch
-├── scripts/
-│   ├── lane_detection_node.py
-│   ├── lane_tracking.py
-│   ├── path_generator.py
-│   └── path_publisher.py
-├── config/
-│   ├── camera.yaml
-│   └── vision_params.yaml
-├── cfg/
-│   └── VisionConfig.cfg
-├── assets/
-│   ├── system_architecture.png
-│   └── lane_detection_demo.gif
-├── CMakeLists.txt
-└── package.xml
-```
 
-> 위 구조는 실제 저장소의 파일명과 폴더 구성에 맞게 수정해야 합니다.
+```text
+vision_stack/
+├── .gitignore
+└── src/
+    └── vision_pkg/
+        ├── CMakeLists.txt
+        ├── package.xml
+        ├── RQT_파라미터_설명.txt
+        ├── Vision_Logic_Explanation.txt
+        ├── cfg/
+        │   └── Vision.cfg
+        ├── config/
+        │   └── vision_params.yaml
+        ├── launch/
+        │   └── vision.launch
+        └── src/
+            ├── main.py
+            ├── process.py
+            ├── sliding_window.py
+            ├── lane.py
+            ├── ros_utils.py
+            ├── config.py
+            ├── config_manager.py
+            └── utils.py
+```
 
 ---
 
