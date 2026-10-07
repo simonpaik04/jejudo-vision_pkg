@@ -1,5 +1,9 @@
 # Jejudo Vision Package
 
+- **구현 방식:** ROS1·OpenCV에서 렌즈 왜곡 보정, Canny·IPM 기반 BEV 변환, Sliding Window와 이전 차선 피팅 주변 탐색을 결합했습니다.
+- **수행 기능:** 양쪽·단일 차선에서 중심 경로를 생성하고, 픽셀 좌표를 차량 기준 미터 좌표로 변환해 `nav_msgs/Path`로 발행했습니다.
+- **설계 특징:** 이전 경로 기반 동적 중심점, 차선 폭·좌우 관계 검사, 재탐색과 시간적 평활화, 실시간 파라미터 조정으로 차선 추적을 보완했습니다.
+
 ## Jeju Autonomous Driving Competition
 
 ### Vision-Based Lane Perception & Local Path Generation
